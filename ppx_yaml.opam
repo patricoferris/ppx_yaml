@@ -10,7 +10,7 @@ bug-reports: "https://github.com/patricoferris/ppx_yaml/issues"
 depends: [
   "dune" {>= "2.6"}
   "alcotest" {with-test}
-  "core" {with-test}
+  "bos" {with-test}
   "ezjsonm" {with-test}
   "ocaml" {>= "4.08.1"}
   "ppxlib"

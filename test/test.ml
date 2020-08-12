@@ -41,9 +41,13 @@ and matrix = { operating_system : string list; ocaml_version : string list }
 
 and step = { uses : string }
 
+let handle_bos = function Ok s -> s | _ -> failwith "Failed to read file"
+
 (* Note that this uses underscores not hyphens so is an invalid workflow file *)
 let test_github_workflow () =
-  let correct = Yaml.of_string_exn (Core.In_channel.read_all "./test.yml") in
+  let correct =
+    Yaml.of_string_exn (handle_bos (Bos.OS.File.read (Fpath.v "./test.yml")))
+  in
   let test =
     [%yaml
       {

@@ -19,7 +19,7 @@
  (description "Build Yaml values from OCaml values")
  (depends
   (alcotest :with-test)
-  (core :with-test)
+  (bos :with-test)
   (ezjsonm :with-test)
   (ocaml
    (>= 4.08.1))
