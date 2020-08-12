@@ -46,7 +46,7 @@ let handle_bos = function Ok s -> s | _ -> failwith "Failed to read file"
 (* Note that this uses underscores not hyphens so is an invalid workflow file *)
 let test_github_workflow () =
   let correct =
-    Yaml.of_string_exn (handle_bos (Bos.OS.File.read (Fpath.v "./test.yml")))
+    Yaml.of_string_exn (handle_bos (Bos.OS.File.read (Fpath.v "yaml/test.yml")))
   in
   let test =
     [%yaml

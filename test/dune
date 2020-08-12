@@ -4,4 +4,6 @@
   (:standard -w -30))
  (libraries bos alcotest yaml)
  (preprocess
-  (pps ppx_yaml)))
+  (pps ppx_yaml))
+ (deps
+  (source_tree yaml)))
