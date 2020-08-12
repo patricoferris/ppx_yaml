@@ -13,7 +13,7 @@ jobs:
         ocaml-version: [ '4.10.0', '4.09.0', '4.08.1' ]
     steps:
     - uses: actions/checkout@master
-    - uses: avsm/setup-ocaml@v1.1
+    - uses: avsm/setup-ocaml@v1.1.0
       with:
         ocaml-version: ${{ matrix.ocaml-version }}
     - run: opam pin add ppx_yaml.dev -n .
