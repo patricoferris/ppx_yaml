@@ -1,0 +1,6 @@
+(library
+ (name ppx_yaml_lib)
+ (public_name ppx_yaml._lib)
+ (libraries yaml ppxlib)
+ (preprocess
+  (pps ppxlib.metaquot)))

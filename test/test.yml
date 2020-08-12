@@ -1,0 +1,12 @@
+name: Yaml
+on: [push]
+jobs:
+  run:
+    name: Tests
+    runs_on: ${{ matrix.operating-system }}
+    strategy:
+      matrix:
+        operating_system: [macos-latest, ubuntu-latest, windows-latest]
+        ocaml_version: [ '4.08.1' ]
+    steps:
+    - uses: avsm/setup-ocaml@v1.1

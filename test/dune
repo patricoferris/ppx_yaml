@@ -1,0 +1,7 @@
+(test
+ (name test)
+ (flags
+  (:standard -w -30))
+ (libraries core alcotest yaml)
+ (preprocess
+  (pps ppx_yaml)))
