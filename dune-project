@@ -20,6 +20,7 @@
  (depends
   (alcotest :with-test)
   (bos :with-test)
+  (mdx :with-test)
   (ezjsonm :with-test)
   (ocaml
    (>= 4.08.1))
