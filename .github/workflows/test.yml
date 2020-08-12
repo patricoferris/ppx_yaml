@@ -1,8 +1,5 @@
 name: Ppx_yaml
-on:
-  push:
-    branches: 
-      - main
+on: [push]
 jobs:
   run:
     name: Tests
