@@ -1,4 +1,4 @@
-# Ppx_yaml -- OCaml types to YAML types
+# Ppx_yaml -- OCaml values to YAML values
 ----
 
 This ppx is based on [ppx_yojson](https://github.com/NathanReb/ppx_yojson).
